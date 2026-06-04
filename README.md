@@ -130,13 +130,13 @@ A dynamic BMI calculation application with clean UI and efficient state manageme
 
 ---
 
-## 📬 Contact
+## 📬 Connect With Me
 
-📧 Email: **hazemmahmoud@gmail.com**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Hazem%20Mahmoud-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/hazem-mahmoud-b763563a9)
 
-💼 LinkedIn: **Add Your LinkedIn URL Here**
+[![Email](https://img.shields.io/badge/Email-m222000093%40gmail.com-red?style=for-the-badge&logo=gmail)](mailto:m222000093@gmail.com)
 
-📱 Phone: **+20 101 621 2260**
+[![Phone](https://img.shields.io/badge/Phone-%2B20%20101%20621%202260-green?style=for-the-badge&logo=whatsapp)](tel:+201016212260)
 
 ---
 
