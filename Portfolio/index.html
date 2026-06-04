@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hazem Mahmoud | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <nav>
+    <a href="#" class="logo">Hazem<span>.</span>Mahmoud</a>
+    <ul class="nav-links">
+      <li><a href="#about"      class="active">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div style="display: flex; gap: 12px; align-items: center;">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light mode">
+          <i class="fas fa-moon"></i>
+      </button>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open menu">
+          <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-text hidden">
+        <h3>Hello, I'm</h3>
+        <h1 class="glitch-name" data-text="Hazem Mahmoud">Hazem Mahmoud</h1>
+        <h2 data-text="Flutter Developer">Flutter Developer</h2>
+
+        <p>I am a passionate Flutter developer with a strong foundation in software engineering principles. I specialize in creating cross-platform mobile applications that are performant, visually appealing, and provide an excellent user experience.</p>
+
+        <div class="btn-box" style="justify-content:inherit;">
+          <a target="_blank" href="CV.pdf" class="btn btn-outline">Download CV &nbsp;<i class="fas fa-download"></i></a>
+          <a href="#contact" class="btn btn-fill">Contact Me</a>
+        </div>
+
+        <div class="linkss" style="margin-top:32px;font-size:1.5rem;display:flex;gap:22px;justify-content:inherit;">
+          <a target="_blank" href="https://www.linkedin.com/in/hazem-mahmoud-b763563a9?utm_source=share_via&utm_content=profile&utm_medium=member_android" style="color:var(--text-muted)"><i class="fab fa-linkedin"></i></a>
+          <a target="_blank" href="https://github.com/hazemmahmoudf"                    style="color:var(--text-muted)"><i class="fab fa-github"></i></a>
+          <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=m222000093@gmail.com" style="color:var(--text-muted)"><i class="fab fa-google"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-img-container hidden">
+        <div class="hero-img"></div>
+      </div>
+    </div>
+  </section>
+
+
+<section id="about">
+  <div class="section-header hidden">
+    <span>MY JOURNEY</span>
+    <h2>About Me</h2>
+  </div>
+
+  <div class="about-grid">
+    <!-- Education -->
+    <div class="info-card hidden">
+      <h3><i class="fas fa-university" style="color:var(--primary)"></i> Education</h3>
+      <ul>
+        <li>
+          <strong>Bachelor's Degree in Computer Science</strong><br>
+          <span style="color:var(--text-muted);font-size:.85rem">
+            Faculty of Computers and Information, Suez Canal University
+          </span><br>
+          <span style="font-size:.8rem;color:var(--neon-yellow);font-weight:700;margin-top:6px;display:block">
+            2022 – 2026 (Expected) &nbsp;|&nbsp; Grade: Very Good
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="info-card hidden" style="transition-delay:.15s">
+      <h3><i class="fas fa-mobile-alt" style="color:var(--secondary)"></i> Professional Training</h3>
+      <ul>
+        <li>
+          <strong>Flutter Development Track</strong><br>
+          <span style="color:var(--text-muted)">
+            Information Technology Institute (ITI)
+          </span>
+        </li>
+
+        <li style="margin-top:12px">
+          <strong>Advanced Flutter & Clean Architecture</strong><br>
+          <span style="color:var(--text-muted)">
+            Eraa Soft Academy
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="info-card hidden" style="transition-delay:.3s">
+      <h3><i class="fas fa-certificate" style="color:#e879f9"></i> Courses & Certifications</h3>
+      <ul>
+        <li>
+          <strong>Complete Flutter Development</strong><br>
+          <span style="color:var(--text-muted)">
+            Udemy – Eng. Tharwat Samy
+          </span>
+        </li>
+
+        <li style="margin-top:12px">
+          <strong>Clean Architecture & SOLID Principles</strong><br>
+          <span style="color:var(--text-muted)">
+            Eng. Usama Elgendy
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="section-header hidden">
+    <span>Explore My</span>
+    <h2>Skills &amp; Experience</h2>
+  </div>
+
+  <div class="skills-container">
+    <div class="skill-box hidden">
+      <h3 class="skill-category"><i class="fas fa-code" style="margin-right:10px"></i>Core Programming</h3>
+      <div class="skill-tags">
+        <span class="tag" style="--tag-color: #00B4AB"><i class="fas fa-terminal"></i> Dart (Expert)</span>
+        <span class="tag" style="--tag-color: #3776AB"><i class="fab fa-python"></i> Python</span>
+        <span class="tag" style="--tag-color: #ED8B00"><i class="fab fa-java"></i> Java</span>
+        <span class="tag" style="--tag-color: #00599C"><i class="fas fa-microchip"></i> C++</span>
+        <span class="tag" style="--tag-color: #F7DF1E"><i class="fab fa-js"></i> JavaScript</span>
+      </div>
+    </div>
+
+    <div class="skill-box hidden" style="transition-delay:.1s">
+      <h3 class="skill-category"><i class="fas fa-rocket" style="margin-right:10px"></i>Flutter Stack</h3>
+      <div class="skill-tags">
+        <span class="tag" style="--tag-color: #02569B"><i class="fas fa-mobile-alt"></i> Flutter</span>
+        <span class="tag" style="--tag-color: #61DAFB"><i class="fas fa-brain"></i> State Management (Bloc, Cubit)</span>
+        <span class="tag" style="--tag-color: #FFD600"><i class="fas fa-database"></i> Local Storage (Hive, SharedPref, Secure)</span>
+        <span class="tag" style="--tag-color: #00E5FF"><i class="fas fa-plug"></i> Dependency Injection (Get_it)</span>
+        <span class="tag" style="--tag-color: #7C4DFF"><i class="fas fa-expand-arrows-alt"></i> Adaptive UI Design</span>
+      </div>
+    </div>
+
+    <div class="skill-box hidden" style="transition-delay:.2s">
+      <h3 class="skill-category"><i class="fas fa-sitemap" style="margin-right:10px"></i>Engineering</h3>
+      <div class="skill-tags">
+        <span class="tag" style="--tag-color: #90A4AE"><i class="fas fa-sitemap"></i> Clean Architecture</span>
+        <span class="tag" style="--tag-color: #E91E63"><i class="fas fa-gem"></i> SOLID Principles</span>
+        <span class="tag" style="--tag-color: #FF9800"><i class="fas fa-object-group"></i> OOP & Design Patterns</span>
+        <span class="tag" style="--tag-color: #FF4081"><i class="fas fa-vial"></i> Unit & Integration Testing</span>
+      </div>
+    </div>
+
+    <div class="skill-box hidden" style="transition-delay:.3s">
+      <h3 class="skill-category"><i class="fas fa-cloud" style="margin-right:10px"></i>Ecosystem</h3>
+      <div class="skill-tags">
+        <span class="tag" style="--tag-color: #F05032"><i class="fab fa-git-alt"></i> Version Control (Git, GitHub)</span>
+        <span class="tag" style="--tag-color: #FFCA28"><i class="fas fa-fire"></i> Cloud (Firebase, Supabase)</span>
+        <span class="tag" style="--tag-color: #009688"><i class="fas fa-network-wired"></i> Networking (REST, Dio, Postman)</span>
+        <span class="tag" style="--tag-color: #4285F4"><i class="fas fa-map-marked-alt"></i> Google Maps Platform</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="projects">
+
+  <div class="section-header hidden">
+    <span>MY WORK</span>
+    <h2>Projects</h2>
+  </div>
+
+  <div class="projects-slider-wrapper hidden">
+    <button class="slider-arrow prev-arrow" aria-label="Previous Project"><i class="fas fa-chevron-left"></i></button>
+    
+    <div class="projects-grid">
+
+    <div class="project-card"> 
+      <div class="project-img">
+        <img src="images/ecoshid.png" alt="EcoShid App">
+      </div>
+      <div class="project-info">
+        <h3>EcoShid – Smart Energy</h3>
+        <p>High-end energy monitoring system with real-time analytics, built using Clean Architecture and Bloc.</p>
+        <div class="project-tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Bloc</span>
+          <span class="tag">Clean Arch</span>
+        </div>
+        <a href="https://github.com/ecoShid/ecoshid-mobile" target="_blank" class="project-link-btn">
+          View Repository <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card"> 
+      <div class="project-img">
+        <img src="images/islamic.png" alt="Islamic App">
+      </div>
+      <div class="project-info">
+        <h3>Islamic App</h3>
+        <p>Comprehensive app with Athan notifications, mosque locator using Google Maps, and multi-language support.</p>
+        <div class="project-tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Maps API</span>
+          <span class="tag">Notifications</span>
+        </div>
+        <a href="https://github.com/hazemmahmoudf/islamic" target="_blank" class="project-link-btn">
+          View Repository <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card"> 
+      <div class="project-img">
+        <img src="images/bookia.png" alt="Bookia App">
+      </div>
+      <div class="project-info">
+        <h3>Bookia (E-commerce)</h3>
+        <p>A seamless book shopping journey with cart management and secure checkout using Cubit and REST APIs.</p>
+        <div class="project-tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Cubit</span>
+          <span class="tag">REST API</span>
+        </div>
+        <a href="https://github.com/hazemmahmoudf/bookia_store" target="_blank" class="project-link-btn">
+          View Repository <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card"> 
+      <div class="project-img">
+        <img src="images/taskati.png" alt="Taskati App">
+      </div>
+      <div class="project-info">
+        <h3>Taskati (Productivity)</h3>
+        <p>Offline-first task management app using Hive for data persistence with priority-based sorting.</p>
+        <div class="project-tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Hive</span>
+          <span class="tag">Local DB</span>
+        </div>
+        <a href="https://github.com/hazemmahmoudf/taskati" target="_blank" class="project-link-btn">
+          View Repository <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card"> 
+      <div class="project-img">
+        <img src="images/bmi.png" alt="BMI App">
+      </div>
+      <div class="project-info">
+        <h3>BMI Calculator</h3>
+        <p>Dynamic health tracking tool with intuitive UI and efficient state management using Cubit.</p>
+        <div class="project-tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Cubit</span>
+          <span class="tag">UI/UX</span>
+        </div>
+        <a href="https://github.com/hazemmahmoudf/taskbmi" target="_blank" class="project-link-btn">
+          View Repository <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <button class="slider-arrow next-arrow" aria-label="Next Project"><i class="fas fa-chevron-right"></i></button>
+  </div> 
+</section>
+
+  <section id="contact" style="padding-bottom:60px">
+    <div class="section-header hidden">
+      <span>Get in Touch</span>
+      <h2>Contact Me</h2>
+    </div>
+
+    <div class="contact-box hidden">
+      <h1>Let's Work Together!</h1>
+      <p style="color:var(--neon-green);margin-top:10px;letter-spacing:1px;font-size:.85rem">
+        I am currently open for new opportunities.
+      </p>
+
+      <div class="contact-links">
+        <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=m222000093@gmail.com" class="contact-item">
+          <i class="fas fa-envelope"></i> hazemmahmoud@gmail.com
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/hazem-mahmoud-b763563a9?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="contact-item">
+          <i class="fab fa-linkedin"></i> LinkedIn Profile
+        </a>
+        <a target="_blank" href="https://wa.me/201016212260" class="contact-item">
+          <i class="fab fa-whatsapp"></i> +20 101 621 2260
+        </a>
+      </div>
+    </div>
+
+    <footer style="text-align:center;margin-top:100px;color:var(--text-muted);font-size:.8rem;letter-spacing:1px">
+      Copyright &copy; 2026 &nbsp;Hazem Mahmoud. All Rights Reserved.
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
