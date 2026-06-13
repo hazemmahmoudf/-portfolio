@@ -465,7 +465,7 @@ body.light-mode ::-webkit-scrollbar-track {
 
 .projects-grid {
   display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   gap: 30px;
   padding: 40px 0;
   overflow: visible;
@@ -526,7 +526,7 @@ body.light-mode ::-webkit-scrollbar-track {
 }
 
 .project-img {
-  height: 230px;
+  aspect-ratio: 1792 / 1024;
   padding: 15px;
   background: rgba(0, 0, 0, 0.3);
   display:flex; align-items:center; justify-content:center;
@@ -660,7 +660,7 @@ body.light-mode ::-webkit-scrollbar-track {
 
 
 @media (max-width:1200px) {
-  .project-card { flex: 0 0 320px; }
+  .project-card { flex: 0 0 420px; }
   .prev-arrow { left: -5px; }
   .next-arrow { right: -5px; }
 }
