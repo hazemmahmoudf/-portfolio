@@ -28,7 +28,7 @@
   const TRAIL = 14;
   const trailDots = [];
   const trailPos  = Array.from({length: TRAIL}, () => ({ x: -100, y: -100 }));
-  const COLORS    = ['#00ff88','#00d4ff','#ff0066','#ffea00'];
+  const COLORS    = ['#00d4ff','#00aaff','#ff0066','#ffea00'];
 
   for (let i = 0; i < TRAIL; i++) {
     const d = document.createElement('div');
@@ -75,7 +75,7 @@
         this.vy = -(Math.random() * .6 + .2);
         this.size = Math.random() * 1.5 + .3;
         this.alpha = Math.random() * .5 + .1;
-        this.color = ['#00ff88','#00d4ff','#ff0066'][Math.floor(Math.random()*3)];
+        this.color = ['#00d4ff','#00aaff','#ff0066'][Math.floor(Math.random()*3)];
         this.life = 1;
       }
       update() {
@@ -107,7 +107,6 @@
     
       getDarkerColor(color) {
         const colors = {
-          '#00ff88': '#009955', 
           '#00d4ff': '#0088cc', 
           '#ff0066': '#cc0055'  
         };
@@ -161,7 +160,7 @@
   if (roleEl) {
     const text = roleEl.dataset.text || roleEl.textContent.trim();
     roleEl.textContent = '';
-    roleEl.style.cssText = 'border-right:2px solid var(--neon-green); padding-right:4px; display:inline-block;';
+    roleEl.style.cssText = 'border-right:2px solid var(--neon-pink); padding-right:4px; display:inline-block;';
 
     let idx = 0;
     function type() {
@@ -171,7 +170,7 @@
       } else {
         let v = true;
         setInterval(() => {
-          roleEl.style.borderRightColor = (v = !v) ? 'var(--neon-green)' : 'transparent';
+          roleEl.style.borderRightColor = (v = !v) ? 'var(--neon-pink)' : 'transparent';
         }, 530);
       }
     }
